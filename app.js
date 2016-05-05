@@ -3,15 +3,16 @@ var express = require('express'),
     mysql = require('mysql'),
     myConnection = require('express-myconnection'),
     bodyParser = require('body-parser'),
+    sleep = require('./routes/sleep'),
     app = express();
 var sleep = require('./routes/sleep');
 
 var dbOptions = {
       host: 'localhost',
-      user: 'admin',
-      password: 'password',
+      user: 'sleep',
+      password: '12345',
       port: 3306,
-      database: 'Babonke'
+      database: 'sleep_app'
 };
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
