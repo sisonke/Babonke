@@ -1,17 +1,14 @@
 {
-  "name": "babonke",
+  "name": "'app''",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sisonke/Babonke.git"
-  },
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "bugs": {
     "url": "https://github.com/sisonke/Babonke/issues"
   },
@@ -22,5 +19,10 @@
     "mysql": "~2.10.2",
     "express-myconnection": "~1.0.4",
     "body-parser": "~1.15.0"
+=======
+  "dependencies": {
+    "express-myconnection": "^1.0.4",
+    "mysql": "^2.10.2"
+>>>>>>> origin/likhona
   }
 }
