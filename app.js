@@ -23,7 +23,16 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.get('/', function(req, res){
-  res.render('quiz');
+  res.render('index',{
+   layout : false
+});
+
+});
+app.get('/question', function(req, res){
+  res.render('questions',{
+   layout : false
+});
+
 });
 app.post('/calculate',sleep.add);
 app.get('/sleep', sleep.show);
