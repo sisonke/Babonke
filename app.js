@@ -28,7 +28,7 @@ app.get('/', function(req, res){
 app.post('/calculate',sleep.add);
 app.get('/sleep', sleep.show);
 
-var port = process.env.PORT || 8030;
+var port = process.env.PORT || 8080;
 var server = app.listen(port, function () {
   var host = server.address().address;
   var port = server.address().port;
