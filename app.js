@@ -3,15 +3,15 @@ var express = require('express'),
     mysql = require('mysql'),
     myConnection = require('express-myconnection'),
     bodyParser = require('body-parser'),
-    sleep = require("./routes/sleep"),
     app = express();
+var sleep = require('./routes/sleep');
 
 var dbOptions = {
       host: 'localhost',
-      user: 'sleep',
-      password: '12345',
+      user: 'admin',
+      password: 'password',
       port: 3306,
-      database: 'sleep_app'
+      database: 'Babonke'
 };
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
@@ -21,15 +21,13 @@ app.use(myConnection(mysql, dbOptions, 'single'));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-
-
-app.get('/', function (req, res) {
-    res.render('Quotes');
+app.get('/', function(req, res){
+  res.render('quiz');
 });
+app.post('/calculate',sleep.add);
 app.get('/sleep', sleep.show);
 
-
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8030;
 var server = app.listen(port, function () {
   var host = server.address().address;
   var port = server.address().port;
