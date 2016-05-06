@@ -18,9 +18,10 @@ exports.add = function(req, res, next) {
 exports.show = function (req, res, next) {
 	req.getConnection(function(err, connection){
 		if (err) return next(err);
-		connection.query('SELECT Q.sleep_time, Q.description FROM Quotes_table AS Q INNER JOIN Questions_table AS q ON q.result  = Q.sleep_time ORDER BY  q.id DESC Limit 1 '
+		connection.query('SELECT Q.sleep_time, Q.description FROM Quotes_table AS Q INNER JOIN Questions_table AS q ON q.result  = Q.sleep_time ORDER BY  q.id DESC '
 , [], function(err, result){
         	if (err) return next(err);
+          console.log(result);
     		res.render( 'quotes', {
 					results: result,
     		});
