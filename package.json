@@ -8,7 +8,6 @@
   },
   "author": "",
   "license": "ISC",
-<<<<<<< HEAD
   "bugs": {
     "url": "https://github.com/sisonke/Babonke/issues"
   },
@@ -19,10 +18,4 @@
     "mysql": "~2.10.2",
     "express-myconnection": "~1.0.4",
     "body-parser": "~1.15.0"
-=======
-  "dependencies": {
-    "express-myconnection": "^1.0.4",
-    "mysql": "^2.10.2"
->>>>>>> origin/likhona
-  }
 }
