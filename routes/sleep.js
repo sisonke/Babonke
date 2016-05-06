@@ -31,15 +31,13 @@ exports.show = function (req, res, next) {
     }
 
     exports.showStrategies = function (req, res, next) {
-    	req.getConnection(function(err, connection){
-    		if (err) return next(err);
-    		connection.query('insert into Questions_table set ?'
-    , [], function(err, result){
-            	if (err) return next(err);
+    // 	req.getConnection(function(err, connection){
+    // 		if (err) return next(err);
+    // 		connection.query('insert into Questions_table set ?'
+    // , [], function(err, result){
+    //         	if (err) return next(err);
               //console.log(result);
-        		res.render( 'strategies', {
-    					show: result,
-        		});
-          	});
-          });
+        		res.render( 'strategies');
+          // 	});
+          // });
         }
