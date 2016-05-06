@@ -5,7 +5,6 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     sleep = require('./routes/sleep'),
     app = express();
-var sleep = require('./routes/sleep');
 
 var dbOptions = {
       host: 'localhost',
@@ -36,6 +35,7 @@ app.get('/question', function(req, res){
 });
 app.post('/calculate',sleep.add);
 app.get('/sleep', sleep.show);
+app.get('/strategies', sleep.showStrategies);
 
 var port = process.env.PORT || 8080;
 var server = app.listen(port, function () {

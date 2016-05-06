@@ -2,10 +2,11 @@ insert into Quotes_table (quotes_name, description, sleep_time) values('q1', 'yo
 insert into Quotes_table (quotes_name, description, sleep_time) values('q2', 'a few more hours cant hurt' , 2);
 insert into Quotes_table (quotes_name, description, sleep_time) values('q3', 'you are getting there' , 3);
 insert into Quotes_table (quotes_name, description, sleep_time) values('q4', 'thats the way to go ' , 4);
-insert into Quotes_table (quotes_name, description, sleep_time) values('q5', 'did u know..' , 5);
-insert into Quotes_table (quotes_name, description, sleep_time) values('q6', 'yeah' , 6);
+insert into Quotes_table (quotes_name, description, sleep_time) values('q5', 'you need 3 hours of sleep' , 5);
+insert into Quotes_table (quotes_name, description, sleep_time) values('q6', 'you almost there' , 6);
 insert into Quotes_table (quotes_name, description, sleep_time) values('q7', 'hooray' , 7);
 insert into Quotes_table (quotes_name, description, sleep_time) values('q8', 'congrats you did it' , 8);
-insert into Quotes_table (quotes_name, description, sleep_time) values('q9', 'more' , 9);
-insert into Quotes_table (quotes_name, description, sleep_time) values('q10', 'is' , 10);
-insert into Quotes_table (quotes_name, description, sleep_time) values('q11', 'always better' , 11);  
+insert into Quotes_table (quotes_name, description, sleep_time) values('q9', 'You need to work on your health' , 9);
+insert into Quotes_table (quotes_name, description, sleep_time) values('q10','Eat Healthy food and Vegetables' , 10);
+insert into Quotes_table (quotes_name, description, sleep_time) values('q11','Too Lazy' , 11);
+insert into Quotes_table (quotes_name, description, sleep_time) values('q11', 'Start working on your gym' , 12);
