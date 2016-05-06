@@ -13,9 +13,10 @@
   },
   "homepage": "https://github.com/sisonke/Babonke#readme",
   "dependencies": {
-    "express": "~4.13.4",
-    "express-handlebars": "~3.0.0",
-    "mysql": "~2.10.2",
-    "express-myconnection": "~1.0.4",
-    "body-parser": "~1.15.0"
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "express-myconnection": "^1.0.4",
+    "mysql": "^2.10.2"
+    }
 }
